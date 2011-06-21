@@ -57,6 +57,10 @@ class Graph
   end
 end
 
+def my_score_function(root, other, depth_hash)
+  100
+end
+
 g = Graph.new
 
 STDIN.each do |m|
@@ -78,3 +82,14 @@ puts JSON(nodes)
 # compute a score for each node with respect to the root,
 # and output a sorted list of nodes by descending score
 #
+
+root = g[ROOT]
+
+nodes.each do |id, depth|
+  #
+  # compute a score:
+  #  other = g[id]
+  #  score = my_score_function(root, other, depth_hash)
+  #
+end
+
